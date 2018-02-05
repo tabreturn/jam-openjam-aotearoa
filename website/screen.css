@@ -1,11 +1,11 @@
 /* testing */
 
-* { outline: 1px solid red; }
+/* { outline: 1px solid red; }
 #bp_ind { background-color: red; bottom: 0; height: 50px; position: fixed; width: 50px; z-index: 99; }
 @media screen and (min-width: 768px) { #bp_ind { background-color: orange; } }
 @media screen and (min-width: 992px) { #bp_ind { background-color: yellow; } }
 @media screen and (min-width: 1200px) { #bp_ind { background-color: white; } }
-
+*/
 
 /* general */
 
@@ -91,19 +91,6 @@ a:hover {
 
 .illustration {
   width: 50%;
-}
-
-.register_btn {
-  background-color: #EF4833;
-  border: 1px dashed rgba(20,60,45,0.35);
-  border-radius: 2em;
-  box-sizing: border-box;
-  color: #FFF;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 25px auto;
-  padding: 25px;
 }
 
 
@@ -369,6 +356,34 @@ a:hover {
   padding-bottom: 1em;
   text-align: center;
 }
+
+
+/* register */
+
+.register_btn {
+  background-color: #EF4833;
+  border: 1px dashed rgba(20,60,45,0.35);
+  border-radius: 2em;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 25px auto;
+  padding: 25px;
+}
+
+.register_sel {
+   background-color: #597;
+   border: 5px solid #597;
+   border-radius: 20px;
+   padding: 1px 3px 2px 4px;
+}
+
+#register_bg {
+  background-image: none;
+}
+
 
 /* media queries */
 
