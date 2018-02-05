@@ -1,32 +1,356 @@
-* {
-  outline: 1px solid red;
-}
+/* testing */
+
+* { outline: 1px solid red; }
+#bp_ind { background-color: red; bottom: 0; height: 50px; position: fixed; width: 50px; z-index: 99; }
+@media screen and (min-width: 768px) { #bp_ind { background-color: orange; } }
+@media screen and (min-width: 992px) { #bp_ind { background-color: yellow; } }
+@media screen and (min-width: 1200px) { #bp_ind { background-color: white; } }
+
+
+/* general */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
-  /*background-image: url('img/bg.gif');*/
-  background-size: cover;
-  background-color: red;
+  background-color: #82DDB5;
+  background-image: url('img/branding-illustration.gif'), url('img/header-bg.jpg');
+  background-position: center 300px, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 120%, auto;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 1.4em;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-left: -2%;
+  overflow: hidden;
+  width: 104%;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 980px;
+  padding: 2.5em 1.5em;
+}
+.container .sect_cont {
+  width: 100%;
 }
 
 .illustration {
   width: 50%;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    background-color: orange;
-  }
+.register_btn {
+  background-color: #EF4833;
+  border: 1px dashed rgba(20,60,45,0.35);
+  border-radius: 2em;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 25px auto;
+  padding: 25px;
 }
+
+
+/* generic */
+
+.larger {
+  font-size: 1.1em;
+}
+
+
+/* nav */
+
+#nav {
+  background-color: #6B9;
+  border-bottom: 1px dashed rgba(20,60,45,0.35);
+  box-sizing: border-box;
+  font-weight: bold;
+  overflow: visible;
+  height: 120px;
+  left: 0;
+  margin-left: -2%;
+  padding: 0 1.3em;
+  position: fixed;
+  top: -20px;
+  transform: rotate(-1deg);
+  width: 104%;
+  z-index: 1;
+}
+
+#nav .container {
+  padding: 0;
+}
+
+#nav #main_nav {
+  list-style-type: none;
+  float: left;
+  line-height: 1.75em;
+  margin: 0;
+  padding: 0;
+  padding-top: 2.2em;
+  text-align: center;
+  transform: rotate(1deg);
+  width: 100%;
+}
+
+#nav #main_nav li {
+  display: inline-block;
+  color: #FFF;
+  font-size: 1em;
+  padding-right: 0.8em;
+}
+
+#nav #social {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  text-align: center;
+  transform: rotate(1deg);
+  width: 100%;
+  word-spacing: 0.7em;
+}
+
+#nav #social li {
+  display: inline-block;
+}
+
+#nav #social img {
+  width: 2.4em;
+}
+
+
+/* banner */
+
+#banner {
+  line-height: 0;
+  overflow: hidden;
+}
+
+#banner #branding {
+  padding-top: 140px;
+  float: left;
+  text-align: center;
+}
+
+#banner #branding #jam_title {
+  display: inline-block;
+  margin: auto;
+  width: 70%;
+  min-width: 290px;
+}
+
+#banner #branding #jam_desc {
+  display: inline-block;
+  margin: auto;
+  padding-left: 10%;
+  padding-top: 5px;
+  width: 50%;
+}
+
+#banner #branding #jam_date {
+  display: inline-block;
+  margin: auto;
+  min-width: 200px;
+  padding-left: 10%;
+  width: 50%;
+}
+
+
+/* what */
+
+#what {
+  background-color: rgba(205,240,225,0.9);
+  color: #378;
+  margin-top: 45%;
+  transform: rotate(1deg);
+}
+
+#what .container {
+  transform: rotate(-1deg);
+}
+
+#what .sponsors {
+  text-align: center;
+}
+
+#what .sponsors img {
+  height: 3.2em;
+  padding: 0.5em;
+}
+
+
+/* map */
+
+#map {
+  background-color: #FFE4F4;
+  background-image: url('img/map-map.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  border-top: 1px dashed rgba(170,51,119,0.35);
+  border-bottom: 2px solid rgba(170,51,119,0.4);
+  color: #378;
+  margin-top: -10px;
+  height: 400px;
+  position: relative;
+  transform: rotate(-1deg);
+}
+
+#map .container {
+  height: 100%;
+  transform: rotate(1deg);
+}
+
+#map a {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#map a:hover {
+  background-color: #E8C;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+#map h1 {
+  color: #A37;
+}
+
+
+/* when */
+
+#when {
+  background-color: #499;
+  color: #FFF;
+  transform: rotate(1deg);
+}
+
+#when .container {
+  transform: rotate(-1deg);
+}
+
+
+/* media queries */
 
 @media screen and (min-width: 768px) {
   body {
-    background-color: yellow;
+    background-position: 110% 50px, top center;
+    background-size: 58%, auto;
+  }
+
+  .section .container {
+    padding-left: 3.5em;
+    padding-right: 4em;
+  }
+
+  .section .container h1 {
+    float: left;
+    text-align: left;
+    width: 20%;
+  }
+
+  .container .sect_cont {
+    margin-bottom: 2em;
+    margin-top: -1.2em;
+    width: 70%;
+    float: right;
+  }
+
+  #nav {
+    padding: 0.5em 2em;
+    height: 80px;
+  }
+
+  #nav #main_nav {
+    font-size: 0.95em;
+    line-height: 1em;
+    text-align: left;
+    width: 70%;
+  }
+
+  #nav #social {
+    padding-top: 2.2em;
+    text-align: right;
+    width: 25%;
+    word-spacing: 0.25em;
+  }
+
+  #banner #branding {
+    padding-top: 140px;
+    float: left;
+    text-align: center;
+    width: 50%;
+  }
+
+  #what {
+    background-image: url('img/branding-illustration-characters.gif');
+    background-position: -610px 30px;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    margin-top: 5%
+  }
+
+  #what .sponsors {
+    text-align: left;
+  }
+
+  #map {
+    background-size: 102%;
+  }
+
+  #map h1 {
+    text-align: left;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+  #nav #main_nav li {
+    font-size: 1.1em;
+    padding-right: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   body {
-    background-color: white;
+    background-position: 110% 30px, top;
+    background-size: 55%, cover;
   }
 }
