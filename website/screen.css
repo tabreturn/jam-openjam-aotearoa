@@ -1,11 +1,11 @@
 /* testing */
 
-/* { outline: 1px solid red; }
+* { outline: 1px solid red; }
 #bp_ind { background-color: red; bottom: 0; height: 50px; position: fixed; width: 50px; z-index: 99; }
 @media screen and (min-width: 768px) { #bp_ind { background-color: orange; } }
 @media screen and (min-width: 992px) { #bp_ind { background-color: yellow; } }
 @media screen and (min-width: 1200px) { #bp_ind { background-color: white; } }
-*/
+
 
 /* general */
 
@@ -146,7 +146,7 @@ a:hover {
 #nav #main_nav {
   list-style-type: none;
   float: left;
-  line-height: 1.5em;
+  line-height: 1.25em;
   margin: 0;
   padding: 0;
   padding-top: 2.2em;
@@ -159,6 +159,7 @@ a:hover {
   display: inline-block;
   color: #FFF;
   font-size: 0.9em;
+  font-weight: bold;
   padding-right: 0.8em;
 }
 
@@ -179,11 +180,17 @@ a:hover {
   margin-top: -5px;
 }
 
-#social.social-mobile {
+#social.social-mobile-header {
+  background-color: rgba(255,255,255,0.45);
+  box-sizing: border-box;
+  height: 150px;
+  padding-top: 100px;
+  width: 102%;
+}
 
+#social.social-mobile-footer {
   display: block;
-  margin: -1.6em 0 1.6em 0;
-  padding-bottom: 0.4em;
+  padding: 2em 0;
 }
 
 #social li {
@@ -204,7 +211,6 @@ a:hover {
 }
 
 #banner #branding {
-  padding-top: 80px;
   float: left;
   text-align: center;
 }
@@ -212,7 +218,6 @@ a:hover {
 #banner #branding #jam_title {
   display: inline-block;
   margin: auto;
-  margin-top: -20px;
   width: 70%;
   min-width: 290px;
 }
@@ -370,7 +375,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   body {
     background-position: 110% 50px, top center;
-    background-size: 58%, auto;
+    background-size: 65%, auto;
   }
 
   .container {
@@ -406,7 +411,7 @@ a:hover {
     display: block;
   }
 
-  #social.social-mobile {
+  #social.social-mobile-header, #social.social-mobile-footer {
     display: none;
   }
 
@@ -431,11 +436,14 @@ a:hover {
 
   #banner {
     height: auto;
+    overflow: visible;
   }
 
   #banner #branding {
-    padding-top: 140px;
     float: left;
+    margin-left: -50px;
+    padding-top: 80px;
+    padding-bottom: 70px;
     text-align: center;
     width: 50%;
   }
