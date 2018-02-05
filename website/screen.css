@@ -146,24 +146,23 @@ p {
   padding-right: 0.8em;
 }
 
-#social {
+.social {
   float: right;
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-top: 10px;
   text-align: center;
-  transform: rotate(1deg);
   width: 100%;
   word-spacing: 0.7em;
 }
 
-#social.social-nonmobile {
+.social.social-nonmobile {
   display: none;
   margin-top: -5px;
 }
 
-#social.social-mobile-header {
+.social.social-mobile-header {
   background-color: rgba(255,255,255,0.45);
   box-sizing: border-box;
   height: 150px;
@@ -171,16 +170,16 @@ p {
   width: 102%;
 }
 
-#social.social-mobile-footer {
+.social.social-mobile-footer {
   display: block;
   padding: 2em 0;
 }
 
-#social li {
+.social li {
   display: inline-block;
 }
 
-#social img {
+.social img {
   width: 2.4em;
 }
 
@@ -332,10 +331,10 @@ p {
   background-image: url('img/header-bg.jpg');
   background-repeat: repeat-x;
   border-bottom: 1px dashed rgba(20,60,45,0.35);
-  color: #378;
+  color: #156;
 }
 
-#conduct + #social {
+#conduct + .social {
   margin-top: 0;
 }
 
@@ -352,6 +351,17 @@ p {
 
 
 /* register */
+
+#register_bg {
+  background-image: none;
+}
+
+#register {
+  background-image: url('img/header-bg.jpg');
+  background-repeat: repeat-x;
+  border-bottom: 1px dashed rgba(20,60,45,0.35);
+  color: #156;
+}
 
 .register_btn {
   background-color: #EF4833;
@@ -371,10 +381,6 @@ p {
    border: 5px solid #597;
    border-radius: 20px;
    padding: 1px 3px 2px 4px;
-}
-
-#register_bg {
-  background-image: none;
 }
 
 
@@ -415,11 +421,11 @@ p {
     top: -30px;
   }
 
-  #social.social-nonmobile {
+  .social.social-nonmobile {
     display: block;
   }
 
-  #social.social-mobile-header, #social.social-mobile-footer {
+  .social.social-mobile-header, .social.social-mobile-footer {
     display: none;
   }
 
@@ -435,7 +441,7 @@ p {
     width: 70%;
   }
 
-  #nav #social {
+  #nav .social {
     padding-top: 2.2em;
     text-align: right;
     width: 25%;
@@ -482,6 +488,10 @@ p {
 
   #who {
     background-image: none;
+  }
+
+  #register {
+    padding-top: 3.5em;
   }
 }
 
