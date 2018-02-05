@@ -14,7 +14,7 @@
 body {
   background-color: #82DDB5;
   background-image: url('img/branding-illustration.gif'), url('img/header-bg.jpg');
-  background-position: center 340px, top center;
+  background-position: center 400px, top center;
   background-repeat: no-repeat, no-repeat;
   background-size: 120%, auto;
   font-family: 'Quicksand', sans-serif;
@@ -113,6 +113,13 @@ a:hover {
   font-size: 1.1em;
 }
 
+.anchor {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  top: -60px;
+}
+
 
 /* nav */
 
@@ -173,7 +180,7 @@ a:hover {
 }
 
 #social.social-mobile {
-  border-bottom: 1px dashed rgba(20,60,45,0.35);
+
   display: block;
   margin: -1.6em 0 1.6em 0;
   padding-bottom: 0.4em;
@@ -192,6 +199,7 @@ a:hover {
 
 #banner {
   line-height: 0;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -204,6 +212,7 @@ a:hover {
 #banner #branding #jam_title {
   display: inline-block;
   margin: auto;
+  margin-top: -20px;
   width: 70%;
   min-width: 290px;
 }
@@ -221,6 +230,7 @@ a:hover {
   margin: auto;
   min-width: 200px;
   padding-left: 10%;
+  padding-bottom: 1em;
   width: 50%;
 }
 
@@ -230,7 +240,6 @@ a:hover {
 #what {
   background-color: rgba(205,240,225,0.9);
   color: #378;
-  margin-top: 32%;
   transform: rotate(1deg);
 }
 
@@ -248,11 +257,11 @@ a:hover {
 }
 
 
-/* map */
+/* where */
 
-#map {
+#where {
   background-color: #FFE4F4;
-  background-image: url('img/map-map.gif');
+  background-image: url('img/where-map.gif');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 1000px;
@@ -265,12 +274,12 @@ a:hover {
   transform: rotate(-1deg);
 }
 
-#map .container {
+#where .container {
   height: 100%;
   transform: rotate(1deg);
 }
 
-#map a {
+#where .container a {
   cursor: pointer;
   display: block;
   height: 100%;
@@ -281,13 +290,13 @@ a:hover {
   z-index: 1;
 }
 
-#map a:hover {
+#where a:hover {
   background-color: #E8C;
   opacity: 0.3;
   text-decoration: none;
 }
 
-#map h1 {
+#where h1 {
   color: #A37;
 }
 
@@ -389,6 +398,10 @@ a:hover {
     width: 50%;
   }
 
+  .anchor {
+    top: -30px;
+  }
+
   #social.social-nonmobile {
     display: block;
   }
@@ -416,6 +429,10 @@ a:hover {
     word-spacing: 0.25em;
   }
 
+  #banner {
+    height: auto;
+  }
+
   #banner #branding {
     padding-top: 140px;
     float: left;
@@ -435,11 +452,11 @@ a:hover {
     text-align: left;
   }
 
-  #map {
+  #where {
     background-size: 102%;
   }
 
-  #map h1 {
+  #where h1 {
     text-align: left;
   }
 
