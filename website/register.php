@@ -46,53 +46,33 @@
 
 <div class="section" id="register">
   <div class="container">
-    <form method="post" action="register.php">
 
-      <h1>Register</h1>
-      <div class="sect_cont">
-        <div class="col-1">
-          <h2>Do Not Be a Dick &hellip;</h2>
-          <p class="larger">
-          Et nobis tempore quibusdam non et ab. Enim ab impedit magni nemo
-          perferendis voluptatem. Neque necess itatibus quibusdam quo delectus
-          asperiores eveniet.
-          </p>
-        </div>
-        <div class="col-2">
-          <label for="firstname">First Name</label>
-          <input name="firstname" type="text" required />
+    <h1>Register</h1>
+    <div class="sect_cont">
+      <div class="col-1">
+        <h2>Do Not Be a Dick &hellip;</h2>
+        <p class="larger">
+  <?php
 
-          <label for="lastname">Last Name</label>
-          <input name="lastname" type="text" required />
+  $msg = "Details: \n";
 
-          <label for="alias">Alias</label>
-          <input name="alias" type="text" required />
-          <em>this will appear on your lanyard</em>
+  foreach($_POST as $key => $value){
+    $msg = $msg . $key . ":" . $value . "\n";
+  }
 
-          <label for="mobile">Mobile #</label>
-          <input name="mobile" type="text" required />
-          <em>this will appear on your lanyard</em>
+  $title = ("Registration: " . $_POST["ref_no"]);
 
-          <input name="ref_no" type="text" />
+  echo $msg;
+  //mail("someone@example.com", $title ,$msg);
 
-        </div>
-        <div class="col-2">
-          <ol start="6">
-            <li>You shall not murder.</li>
-            <li>You shall not commit adultery.</li>
-            <li>You shall not steal.</li>
-            <li>You shall not bear false witness against your neighbor.</li>
-            <li>You shall not covet.</li>
-          </ol>
-        </div>
-        <div class="col-1">
-          <input type="submit" />
-        </div>
+  ?>
+        </p>
       </div>
 
-    </form>
   </div>
 </div>
+
+<br style="clear:both" />
 
 <ol class="social social-mobile-footer">
   <li><a href="#"><img src="img/icon-twitter.svg" /></a></li>

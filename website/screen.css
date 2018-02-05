@@ -31,6 +31,11 @@ a:hover {
   text-decoration: underline;
 }
 
+em {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
 h1 {
   font-size: 2rem;
   margin-top: 0;
@@ -172,7 +177,7 @@ p {
 
 .social.social-mobile-footer {
   display: block;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .social li {
@@ -356,11 +361,16 @@ p {
   background-image: none;
 }
 
+#register_bg .social-mobile-header {
+  display: none;
+}
+
 #register {
   background-image: url('img/header-bg.jpg');
   background-repeat: repeat-x;
   border-bottom: 1px dashed rgba(20,60,45,0.35);
   color: #156;
+  padding-top: 3.7em;
 }
 
 .register_btn {
@@ -488,10 +498,6 @@ p {
 
   #who {
     background-image: none;
-  }
-
-  #register {
-    padding-top: 3.5em;
   }
 }
 
