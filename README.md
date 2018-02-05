@@ -1,6 +1,6 @@
 # openjam
 
-Open Jam 2017 website
+Open Jam Aotearoa 2017 website
 
 
 # Todo
