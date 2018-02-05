@@ -1,20 +1,20 @@
 /* testing */
 
-* { outline: 1px solid red; }
+/* { outline: 1px solid red; }
 #bp_ind { background-color: red; bottom: 0; height: 50px; position: fixed; width: 50px; z-index: 99; }
 @media screen and (min-width: 768px) { #bp_ind { background-color: orange; } }
 @media screen and (min-width: 992px) { #bp_ind { background-color: yellow; } }
 @media screen and (min-width: 1200px) { #bp_ind { background-color: white; } }
-
+*/
 
 /* general */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 body {
   background-color: #82DDB5;
   background-image: url('img/branding-illustration.gif'), url('img/header-bg.jpg');
-  background-position: center 300px, top center;
+  background-position: center 340px, top center;
   background-repeat: no-repeat, no-repeat;
   background-size: 120%, auto;
   font-family: 'Quicksand', sans-serif;
@@ -59,8 +59,34 @@ a:hover {
   max-width: 980px;
   padding: 2.5em 1.5em;
 }
+
+.container ol {
+  padding: 0 1em;
+}
+
+.container li {
+  display: list-item;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  line-height: 1.2em;
+  padding-left: 0.5em;
+}
+
 .container .sect_cont {
   width: 100%;
+}
+
+.container .sect_cont .col-1 {
+  clear: both;
+  width: 100%;
+}
+
+.container .sect_cont .col-2 {
+  width: 100%;
+}
+
+.container .sect_cont .col-2:first-child {
+  padding-left: 0;
 }
 
 .illustration {
@@ -94,9 +120,8 @@ a:hover {
   background-color: #6B9;
   border-bottom: 1px dashed rgba(20,60,45,0.35);
   box-sizing: border-box;
-  font-weight: bold;
   overflow: visible;
-  height: 120px;
+  height: 108px;
   left: 0;
   margin-left: -2%;
   padding: 0 1.3em;
@@ -114,7 +139,7 @@ a:hover {
 #nav #main_nav {
   list-style-type: none;
   float: left;
-  line-height: 1.75em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
   padding-top: 2.2em;
@@ -126,11 +151,11 @@ a:hover {
 #nav #main_nav li {
   display: inline-block;
   color: #FFF;
-  font-size: 1em;
+  font-size: 0.9em;
   padding-right: 0.8em;
 }
 
-#nav #social {
+#social {
   list-style-type: none;
   float: right;
   margin: 0;
@@ -142,11 +167,23 @@ a:hover {
   word-spacing: 0.7em;
 }
 
-#nav #social li {
+#social.social-nonmobile {
+  display: none;
+  margin-top: -5px;
+}
+
+#social.social-mobile {
+  border-bottom: 1px dashed rgba(20,60,45,0.35);
+  display: block;
+  margin: -1.6em 0 1.6em 0;
+  padding-bottom: 0.4em;
+}
+
+#social li {
   display: inline-block;
 }
 
-#nav #social img {
+#social img {
   width: 2.4em;
 }
 
@@ -159,7 +196,7 @@ a:hover {
 }
 
 #banner #branding {
-  padding-top: 140px;
+  padding-top: 80px;
   float: left;
   text-align: center;
 }
@@ -193,7 +230,7 @@ a:hover {
 #what {
   background-color: rgba(205,240,225,0.9);
   color: #378;
-  margin-top: 45%;
+  margin-top: 32%;
   transform: rotate(1deg);
 }
 
@@ -259,7 +296,12 @@ a:hover {
 
 #when {
   background-color: #499;
+  background-image: url('img/branding-illustration-characters.gif');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 800px;
   color: #FFF;
+  padding-bottom: 5em;
   transform: rotate(1deg);
 }
 
@@ -267,6 +309,52 @@ a:hover {
   transform: rotate(-1deg);
 }
 
+
+/* who */
+
+#who {
+  background-color: white;
+  background-image: url('img/branding-illustration-characters.gif');
+  background-position: 120% -650px ;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  color: #388;
+}
+
+#who h1 {
+  text-shadow:
+   -1px -1px 0 #FFF,
+   1px  -1px 0 #FFF,
+   -1px  1px 0 #FFF,
+   1px   1px 0 #FFF;
+}
+
+#who .sect_cont {
+  background-color: #FFF;
+}
+
+
+/* conduct */
+
+#conduct {
+  color: #378;
+  border-bottom: 1px dashed rgba(20,60,45,0.35);
+}
+
+#conduct + #social {
+  margin-top: 0;
+}
+
+
+/* foonote */
+
+#footnote {
+  color: #E43;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+  text-align: center;
+}
 
 /* media queries */
 
@@ -276,12 +364,12 @@ a:hover {
     background-size: 58%, auto;
   }
 
-  .section .container {
+  .container {
     padding-left: 3.5em;
     padding-right: 4em;
   }
 
-  .section .container h1 {
+  .container h1 {
     float: left;
     text-align: left;
     width: 20%;
@@ -292,6 +380,21 @@ a:hover {
     margin-top: -1.2em;
     width: 70%;
     float: right;
+  }
+
+  .container .sect_cont .col-2 {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 1em;
+    width: 50%;
+  }
+
+  #social.social-nonmobile {
+    display: block;
+  }
+
+  #social.social-mobile {
+    display: none;
   }
 
   #nav {
@@ -322,8 +425,8 @@ a:hover {
 
   #what {
     background-image: url('img/branding-illustration-characters.gif');
-    background-position: -610px 30px;
     background-repeat: no-repeat;
+    background-position: -500px -350px;
     background-size: 800px;
     margin-top: 5%
   }
@@ -338,6 +441,14 @@ a:hover {
 
   #map h1 {
     text-align: left;
+  }
+
+  #when {
+    background-position: center 100px;
+  }
+
+  #who {
+    background-image: none;
   }
 }
 
