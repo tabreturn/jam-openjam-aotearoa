@@ -268,7 +268,7 @@ p {
 }
 
 #where a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(187,68,136,0.2);
 }
 
 #where .container {
@@ -282,6 +282,18 @@ p {
    2px  -2px 0 #FFF,
    -2px  2px 0 #FFF,
    2px   2px 0 #FFF;
+}
+
+#where .label_txt {
+  position: absolute;
+  top: 80px;
+  transform: rotate(-1deg);
+}
+
+#where span {
+  background-color:#B48;
+  line-height: 2em;
+  padding: 0.2em;
 }
 
 
