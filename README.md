@@ -7,4 +7,5 @@ Open Jam Aotearoa 2017 website
 
 * Theme screenshot
 * Update readme info (usage, illustrator etc.)
+* Email map link
 * ...
