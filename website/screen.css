@@ -7,6 +7,7 @@
 @media screen and (min-width: 1200px) { #bp_ind { background-color: white; } }
 */
 
+
 /* general */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
@@ -88,10 +89,6 @@ p {
 
 .container .sect_cont .col-2 {
   width: 100%;
-}
-
-.container .sect_cont .col-2:first-child {
-  padding-left: 0;
 }
 
 
@@ -354,6 +351,11 @@ p {
   text-align: center;
 }
 
+#footnote a {
+  color: #E43;
+  text-decoration: underline;
+}
+
 
 /* register */
 
@@ -373,16 +375,22 @@ p {
   padding-top: 3.7em;
 }
 
-.register_btn {
+.register_btn,
+#register form input[type='submit'] {
   background-color: #EF4833;
   border: 1px dashed rgba(20,60,45,0.35);
   border-radius: 2em;
-  box-sizing: border-box;
   color: #FFF;
-  display: inline-block;
+  cursor: pointer;
+  display: block;
+  font-family: 'Quicksand';
   font-size: 20px;
   font-weight: bold;
+  height: auto;
+  letter-spacing: 0;
+  line-height: 0;
   margin: 25px auto;
+  max-width: 8em;
   padding: 25px;
 }
 
@@ -391,6 +399,30 @@ p {
    border: 5px solid #597;
    border-radius: 20px;
    padding: 1px 3px 2px 4px;
+}
+
+#register form label {
+  display: block;
+  padding-left: 0.1em;
+}
+
+#register form input {
+  border: 1px solid #6A8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #156;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  margin: 0.2em 1em 1em 0;
+  padding: 0.6em;
+  width: 100%;
+}
+
+#register form em {
+  display: block;
+  font-size: 0.9em;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
 }
 
 
@@ -423,8 +455,11 @@ p {
   .container .sect_cont .col-2 {
     box-sizing: border-box;
     float: left;
-    padding-left: 1em;
     width: 50%;
+  }
+
+  .container .sect_cont .col-2 + .col-2 {
+    padding-left: 1em;
   }
 
   .anchor {
@@ -435,7 +470,8 @@ p {
     display: block;
   }
 
-  .social.social-mobile-header, .social.social-mobile-footer {
+  .social.social-mobile-header,
+  .social.social-mobile-footer {
     display: none;
   }
 
@@ -498,6 +534,11 @@ p {
 
   #who {
     background-image: none;
+  }
+
+  #register form input[type='submit'] {
+    margin-left: 0;
+    margin-top: 1em;
   }
 }
 

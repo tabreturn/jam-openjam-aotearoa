@@ -1,10 +1,10 @@
-# Open Jam Aotearoa
+# openjam
 
 Open Jam Aotearoa 2017 website
 
 
 # Todo
 
-* Registration form
-* Form JS
-* Form mailer
+* Theme screenshot
+* Update readme info (usage, illustrator etc.)
+* ...
