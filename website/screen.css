@@ -41,6 +41,11 @@ h1 {
   font-size: 2rem;
   margin-top: 0;
   text-align: center;
+  text-shadow:
+   -2px -2px 0 rgba(255,255,255,0.5),
+   2px  -2px 0 rgba(255,255,255,0.5),
+   -2px  2px 0 rgba(255,255,255,0.5),
+   2px   2px 0 rgba(255,255,255,0.5);
 }
 
 h2 {
@@ -277,11 +282,6 @@ p {
 
 #where h1 {
   color: #A37;
-  text-shadow:
-   -2px -2px 0 #FFF,
-   2px  -2px 0 #FFF,
-   -2px  2px 0 #FFF,
-   2px   2px 0 #FFF;
 }
 
 #where .label_txt {
@@ -290,7 +290,7 @@ p {
   transform: rotate(-1deg);
 }
 
-#where span {
+#where .label_txt span {
   background-color:#B48;
   line-height: 2em;
   padding: 0.2em;
@@ -314,28 +314,16 @@ p {
   transform: rotate(-1deg);
 }
 
+#when h1 {
+  text-shadow: none;
+}
+
 
 /* who */
 
 #who {
-  background-color: white;
-  background-image: url('img/branding-illustration-characters.gif');
-  background-position: 120% -650px ;
-  background-repeat: no-repeat;
-  background-size: 1000px;
+  background-color: #F5F5F5;
   color: #388;
-}
-
-#who h1 {
-  text-shadow:
-   -2px -2px 0 #FFF,
-   2px  -2px 0 #FFF,
-   -2px  2px 0 #FFF,
-   2px   2px 0 #FFF;
-}
-
-#who .sect_cont {
-  background-color: #FFF;
 }
 
 
@@ -345,7 +333,7 @@ p {
   background-image: url('img/header-bg.jpg');
   background-repeat: repeat-x;
   border-bottom: 1px dashed rgba(20,60,45,0.35);
-  color: #156;
+  color: #166;
 }
 
 #conduct + .social {
@@ -542,10 +530,6 @@ p {
 
   #when {
     background-position: center 100px;
-  }
-
-  #who {
-    background-image: none;
   }
 
   #register form input[type='submit'] {
