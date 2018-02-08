@@ -13,18 +13,19 @@
 <!-- response email template
 
 <?php
+$admin = 'webmaster@example.com';
+
 if ($_POST['firstname']) {
   $register_display = 'none';
   $msg = 'Registration: \n';
   $title = ('Registration: ' . $_POST['ref_no']);
-  $admin = 'webmaster@example.com';
 
   foreach ($_POST as $key => $value) {
     $msg = $msg . $key . ": " . $value . "\n";
   }
 
   echo $msg;
-  mail('admin@example.com', $title ,$msg, ('From: '.$admin));
+  mail($admin, $title ,$msg, ('From: '.$admin));
 
   $msg = 'Thanks, ' . $_POST['firstname'] . '\n\n' .
          '... or should I say, ' . $_POST['alias'] . '\n\n' .
