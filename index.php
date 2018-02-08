@@ -91,7 +91,7 @@
             development towards more artistic and experimental outputs.
             Addressing a prevalent lack of diversity in the game industry we
             plan to create an inclusive environment, inviting participants like
-            artists, designers, musicians, storytellers that don’t necessarily
+            artists, designers, musicians, storytellers that don't necessarily
             consider themselves programmers, developers or gamers. On Friday
             evening we will announce the theme of the jam and participants can
             spend as much time as they want during the opening hours to work on
