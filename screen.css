@@ -107,7 +107,20 @@ p {
 }
 
 .larger {
+  line-height: 1.6em;
   font-size: 1.1em;
+  margin-bottom: 1.3em;
+}
+
+.hideshow dd {
+  display: none;
+  margin: 0;
+}
+
+.hideshow dt {
+  color: #EF4833;
+  cursor:pointer;
+  text-align:right;
 }
 
 
@@ -514,7 +527,8 @@ p {
     background-position: -500px -350px;
     background-repeat: no-repeat;
     background-size: 800px;
-    margin-top: 5%
+    margin-top: 5%;
+    padding-top: 2em;
   }
 
   #what .sponsors {
