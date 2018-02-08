@@ -103,7 +103,7 @@
 
       <div class="sponsors">
         <h2>Sponsors</h2>
-        <img src="img/sponsor-massey.png" alt="massey university" />
+        <img src="img/sponsor-massey.svg" alt="massey university" />
       </div>
 
     </div>
