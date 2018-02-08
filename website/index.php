@@ -14,32 +14,7 @@
 
 <!-- navigation -->
 
-<div id="nav">
-  <div class="container">
-
-    <ol id="main_nav">
-      <li><a href="#what-a">What?</a></li>
-      <li><a href="#where-a">Where?</a></li>
-      <li><a href="#when-a">When?</a></li>
-      <li><a href="#who-a">Who?</a></li>
-      <li><a href="#conduct-a">Code of Conduct</a></li>
-      <li><a href="register.html">Register</a></li>
-    </ol>
-    <ol class="social social-nonmobile">
-      <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-      <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-      <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
-    </ol>
-
-  </div>
-</div>
-
-<ol class="social social-mobile-header">
-  <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-  <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-  <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
-</ol>
-<br style="clear:both" />
+<? include 'nav.php'; ?>
 
 
 <!-- banner -->
@@ -235,16 +210,10 @@
   </div>
 </div>
 
-<ol class="social social-mobile-footer">
-  <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-  <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-  <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
-</ol>
 
-<div id="footnote" class="container">
-  Open Jam Aotearoa, 2018 | <a href="mailto:email@email.com">email@email.com</a><br />
-  <a href="https://github.com/tabreturn/openjam-aotearoa"> website theme</a>
-</div>
+<!-- footer -->
+
+<? include 'footer.php'; ?>
 
 <script src="zenscroll-min.js"></script>
 

@@ -367,7 +367,8 @@ p {
   display: none;
 }
 
-#register {
+#register,
+#confirmation {
   background-image: url('img/header-bg.jpg');
   background-repeat: repeat-x;
   border-bottom: 1px dashed rgba(20,60,45,0.35);
