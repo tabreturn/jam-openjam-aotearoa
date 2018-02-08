@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 
-<!--
-<?
+<html lang="en">
+<head>
+  <title>Open Jam Aotearoa - Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="screen.css" />
+</head>
 
+
+<!-- response email template
+
+<?
 if ($_POST['firstname']) {
   $register_display = 'none';
   $msg = 'Registration: \n';
@@ -14,32 +24,30 @@ if ($_POST['firstname']) {
   }
 
   echo $msg;
-  //mail('admin@example.com', $title ,$msg, ('From: '.$admin));
+  mail('admin@example.com', $title ,$msg, ('From: '.$admin));
 
   $msg = 'Thanks, ' . $_POST['firstname'] . '\n\n' .
-         'If you haven\'t paid yet, please do so using the following details: \n' .
-         'Bank: ANZ, New Zealand \n' .
-         'Account: 01-2345-678910-00 \n' .
-         'Reference: ' . $ref . '\n\n' .
-         'We\'re doing the processing manually, so please be patient. Our admin crew will send a confirmation as soon as they can.';
+         '... or should I say, ' . $_POST['alias'] . '\n\n' .
+         'We are stoked that you are joining our Open Jam Aotearoa! \n\n' .
+         'Your registration is being processed at the moment and will be
+         confirmed by an admin shortly. If you do not hear back from us within
+         24 hours please directly contact: \n\n'.
+         'openjamaotearoa@gmail.com \n\n' .
+         'Please be aware that once we have reached a number of 40 participants
+         we will put you on a waitlist. \n\n' .
+         'Ngā mihi nui, \n' .
+         'The Open Jam Aotearoa team';
+
   echo $msg;
-  //mail($_POST['email'], $title ,$msg, ('From: '.$admin));
+  mail($_POST['email'], $title ,$msg, ('From: '.$admin));
 }
 else {
   $confirmation_display = 'none';
 }
-
 ?>
 -->
 
 
-<html lang="en">
-<head>
-  <title>Open Jam Aotearoa - Register</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="screen.css" />
-</head>
 <body id="register_bg">
 
 <div id="bp_ind"></div>
@@ -61,9 +69,9 @@ else {
         <div class="col-1">
           <h2>Almost there &hellip;</h2>
           <p class="larger">
-          Et nobis tempore quibusdam non et ab. Enim ab impedit magni nemo
-          perferendis voluptatem. Neque necess itatibus quibusdam quo delectus
-          asperiores eveniet.
+            Please fill out the form below to register (we promise to be
+            responsible with your info!). Please be aware that once we have
+            reached a number of 40 participants we will put you on a waitlist.
           </p>
         </div>
 
@@ -82,9 +90,19 @@ else {
           <label for="mobile">Mobile #</label>
           <input name="mobile" type="text" required/>
         </div>
-        <br style="clear:both" />
+
+        <br style="clear:both" /><br style="clear:both" />
 
         <div class="col-1">
+          <label>
+            <input name="coc" type="checkbox" required />
+            I agree to all of the terms in the <a href="index.php#conduct-a">Code of Conduct</a>
+          </label>
+          <br style="clear:both" />
+          <label>
+            <input name="age" type="checkbox" required />
+            I confirm that I am over 18 years of age
+          </label>
           <input class="register_btn" type="submit" value="Make it so!" />
         </div>
       </div>
@@ -107,28 +125,22 @@ else {
         <p>
           &hellip; or should I say, <? echo $_POST['alias'] ?> ;)
         </p>
-        <p >
-          All that's left to do is make a payment of <strong>$20</strong> to
-          this account:
-        </p>
-        <p class="larger">
-          Bank: <strong>ANZ, New Zealand</strong><br />
-          Account: <strong>01-2345-678910-00</strong><br />
-          Reference:
-          <strong>
-            <? $ref = (strtoupper(
-                 substr($_POST['firstname'],0,2) .
-                 substr($_POST['lastname'], 0,2) .
-                 substr($_POST['alias'],    0,2) .
-                 substr($_POST['mobile'],    -2)
-               ));
-               echo $ref;
-            ?>
-          </strong>
+        <p>
+          We are stoked that you are joining our Open Jam Aotearoa!
         </p>
         <p>
-          We're doing the processing manually, so please be patient. Our admin
-          crew will send a confirmation as soon as they can.
+          Your registration is being processed at the moment and will be
+          confirmed by an admin shortly. If you do not hear back from us within
+          24 hours please directly contact:
+          <a href="mailto:openjamaotearoa@gmail.com">openjamaotearoa@gmail.com</a>
+        </p>
+        <p>
+          Please be aware that once we have reached a number of 40 participants
+          we will put you on a waitlist.
+        </p>
+        <p>
+          Ngā mihi nui,<br />
+          The Open Jam Aotearoa team
         </p>
 
       </div>

@@ -10,6 +10,7 @@ if (basename($_SERVER["SCRIPT_FILENAME"]) == 'register.php') {
 
     <ol id="main_nav">
       <li><a href="<? echo $index ?>#what-a">What?</a></li>
+      <li><a href="<? echo $index ?>#why-a">Why?</a></li>
       <li><a href="<? echo $index ?>#where-a">Where?</a></li>
       <li><a href="<? echo $index ?>#when-a">When?</a></li>
       <li><a href="<? echo $index ?>#who-a">Who?</a></li>
