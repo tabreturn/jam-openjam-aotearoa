@@ -14,7 +14,7 @@
 
 <!-- navigation -->
 
-<? include 'nav.php'; ?>
+<? include 'nav.php' ?>
 
 
 <!-- banner -->
@@ -213,7 +213,7 @@
 
 <!-- footer -->
 
-<? include 'footer.php'; ?>
+<? include 'footer.php' ?>
 
 <script src="zenscroll-min.js"></script>
 

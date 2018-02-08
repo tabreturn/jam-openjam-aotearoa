@@ -17,17 +17,13 @@ if (basename($_SERVER["SCRIPT_FILENAME"]) == 'register.php') {
       <li><a href="register.php" class="<? echo $register_sel ?>">Register</a></li>
     </ol>
     <ol class="social social-nonmobile">
-      <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-      <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-      <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
+      <? include 'social.php' ?>
     </ol>
 
   </div>
 </div>
 
 <ol class="social social-mobile-header">
-  <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-  <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-  <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
+  <? include 'social.php' ?>
 </ol>
 <br style="clear:both" />

@@ -1,7 +1,5 @@
 <ol class="social social-mobile-footer">
-  <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a></li>
-  <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a></li>
-  <li><a href="#"><img src="img/icon-itch.svg" alt="itch" /></a></li>
+  <? include 'social.php' ?>
 </ol>
 
 <div id="footnote" class="container">
