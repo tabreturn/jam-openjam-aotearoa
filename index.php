@@ -29,7 +29,7 @@
       <img id="jam_date" src="img/branding-date.gif" alt="9-11 March, 6pm" />
       <br />
       <div class="register_btn">
-        <a href="register.html">Register now</a>
+        <a href="register.php">Register now</a>
       </div>
     </div>
 
