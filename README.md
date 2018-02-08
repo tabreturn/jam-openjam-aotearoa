@@ -4,7 +4,6 @@ Open Jam Aotearoa 2017 website
 
 [No rights reserved](https://creativecommons.org/publicdomain/zero/1.0/) | Thanks Nick Holmes for the illustration work.
 
-# Todo
+![screenshot](screenshot.png)
 
-* Theme screenshot
-* ...
+[live site](http://openjam.cmp.ac.nz)
