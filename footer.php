@@ -1,5 +1,5 @@
 <ol class="social social-mobile-footer">
-  <? include 'social.php' ?>
+  <?php include 'social.php' ?>
 </ol>
 
 <div id="footnote" class="container">

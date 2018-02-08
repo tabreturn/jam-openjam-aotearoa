@@ -12,7 +12,7 @@
 
 <!-- response email template
 
-<?
+<?php
 if ($_POST['firstname']) {
   $register_display = 'none';
   $msg = 'Registration: \n';
@@ -55,12 +55,12 @@ else {
 
 <!-- navigation -->
 
-<? include 'nav.php'; ?>
+<?php include 'nav.php'; ?>
 
 
 <!-- register -->
 
-<div class="section" id="register" style="display:<? echo $register_display ?>">
+<div class="section" id="register" style="display:<?php echo $register_display ?>">
   <div class="container">
     <form method="post" action="register.php">
 
@@ -114,16 +114,16 @@ else {
 
 <!-- confirmation -->
 
-<div class="section" id="confirmation" style="display:<? echo $confirmation_display ?>">
+<div class="section" id="confirmation" style="display:<?php echo $confirmation_display ?>">
   <div class="container">
 
     <h1>Register</h1>
     <div class="sect_cont">
       <div class="col-1">
 
-        <h2>Thanks <? echo $_POST['firstname'] ?></h2>
+        <h2>Thanks <?php echo $_POST['firstname'] ?></h2>
         <p>
-          &hellip; or should I say, <? echo $_POST['alias'] ?> ;)
+          &hellip; or should I say, <?php echo $_POST['alias'] ?> ;)
         </p>
         <p>
           We are stoked that you are joining our Open Jam Aotearoa!
@@ -151,7 +151,7 @@ else {
 
 <!-- footer -->
 
-<? include 'footer.php'; ?>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
