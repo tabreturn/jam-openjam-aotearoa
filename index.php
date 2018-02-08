@@ -68,8 +68,8 @@
         :)) You can come along with a pre-made team or we will be happy to
         facilitate team creation during the event. Also, we're happy for solo
         content creators to come along to contribute assets to muliple games at
-        once &ndash; (this often works super well for audio peeps with
-        specialised skills in sound design/ implementation/ composition).
+        once (this often works super well for audio peeps with specialised
+        skills in sound design/ implementation/ composition).
       </p>
 
       <div class="sponsors">
