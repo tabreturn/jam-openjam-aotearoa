@@ -13,34 +13,38 @@
 <!-- response email template
 
 <?php
-$admin = 'webmaster@example.com';
+$admin = 'openjamaotearoa@gmail.com';
 
 if ($_POST['firstname']) {
   $register_display = 'none';
-  $msg = 'Registration: \n';
-  $title = ('Registration: ' . $_POST['ref_no']);
+  $msg = 'Registration:';
+  $title = ('Open Jam Aotearoa Registration in Process');
 
   foreach ($_POST as $key => $value) {
-    $msg = $msg . $key . ": " . $value . "\n";
+    $msg = $msg . $key . ': ' . $value . '
+    ';
   }
 
   echo $msg;
-  mail($admin, $title ,$msg, ('From: '.$admin));
+  mail($admin, $title ,$msg, ('From: ' . $_POST['firstname'] . ' ' . $_POST['lastname']));
 
-  $msg = 'Thanks, ' . $_POST['firstname'] . '\n\n' .
-         '... or should I say, ' . $_POST['alias'] . '\n\n' .
-         'We are stoked that you are joining our Open Jam Aotearoa! \n\n' .
-         'Your registration is being processed at the moment and will be
-         confirmed by an admin shortly. If you do not hear back from us within
-         24 hours please directly contact: \n\n'.
-         'openjamaotearoa@gmail.com \n\n' .
-         'Please be aware that once we have reached a number of 40 participants
-         we will put you on a waitlist. \n\n' .
-         'Ngā mihi nui, \n' .
-         'The Open Jam Aotearoa team';
+  $msg =
+'Thanks, ' . $_POST['firstname'] . '
+... or should I say, ' . $_POST['alias'] . '
+
+We are stoked that you are joining our Open Jam Aotearoa!
+
+Your registration is being processed at the moment and will be confirmed by an admin shortly. If you do not hear back from us within 24 hours please directly contact:
+
+openjamaotearoa@gmail.com
+
+Please be aware that once we have reached a number of 40 participants we will put you on a waitlist.
+
+Nga mihi nui
+The Open Jam Aotearoa team';
 
   echo $msg;
-  mail($_POST['email'], $title ,$msg, ('From: '.$admin));
+  mail($_POST['email'], $title ,$msg, ('From: Open Jam Aotearoa'));
 }
 else {
   $confirmation_display = 'none';
