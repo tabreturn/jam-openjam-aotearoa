@@ -96,6 +96,7 @@ else {
           <input name="email" type="email" required />
           <label for="mobile">Mobile #</label>
           <input name="mobile" type="text" required/>
+          <em>optional</em>
         </div>
 
         <br style="clear:both" /><br style="clear:both" />
@@ -109,6 +110,11 @@ else {
           <label>
             <input name="age" type="checkbox" required />
             I confirm that I am over 18 years of age
+          </label>
+          <br style="clear:both" />
+          <label>
+            <input name="cash" type="checkbox" required />
+            I'll arrive with my $20 cash on Fri Mar 9, 6 PM
           </label>
           <input class="register_btn" type="submit" value="Make it so!" />
         </div>
