@@ -13,12 +13,14 @@
 <!-- response email template
 
 <?php
-$admin = 'openjamaotearoa@gmail.com';
+$admin = 'webmaster@domain.com';
+$title = ('Open Jam Aotearoa Registration in Process');
 
 if ($_POST['firstname']) {
   $register_display = 'none';
-  $msg = 'Registration:';
-  $title = ('Open Jam Aotearoa Registration in Process');
+  $msg = '
+Registration:
+';
 
   foreach ($_POST as $key => $value) {
     $msg = $msg . $key . ': ' . $value . '
@@ -26,11 +28,11 @@ if ($_POST['firstname']) {
   }
 
   echo $msg;
-  mail($admin, $title ,$msg, ('From: ' . $_POST['firstname'] . ' ' . $_POST['lastname']));
+  mail($admin, $title ,$msg, ('From: ' . $admin));
 
   $msg =
 'Thanks, ' . $_POST['firstname'] . '
-... or should I say, ' . $_POST['alias'] . '
+... or should I say, ' . $_POST['alias'] . ' ;)
 
 We are stoked that you are joining our Open Jam Aotearoa!
 
@@ -44,7 +46,7 @@ Nga mihi nui
 The Open Jam Aotearoa team';
 
   echo $msg;
-  mail($_POST['email'], $title ,$msg, ('From: Open Jam Aotearoa'));
+  mail($_POST['email'], $title ,$msg, ('From: ' . $admin));
 }
 else {
   $confirmation_display = 'none';
