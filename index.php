@@ -2,9 +2,17 @@
 
 <html lang="en">
 <head>
-  <title>Open Jam Aotearoa - March 9-11</title>
   <meta charset="utf-8">
+  <title>Open Jam Aotearoa - March 9-11</title>
+  <meta name="description" content="A 48 hour game jam at Massey University College of Creative Arts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:description" content="A 48 hour game jam at Massey University College of Creative Arts" />
+  <meta property="og:image" content="img/og-thumbnail.png" />
+  <meta property="og:title" content="Open Jam Aotearoa - March 9-11" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<?php echo 'https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI] ?>" />
+
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="screen.css" />
 </head>
