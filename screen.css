@@ -275,6 +275,7 @@ p {
 
 #what .sponsors img {
   height: 4em;
+  max-width: 15em;
   padding: 0.5em;
 }
 
