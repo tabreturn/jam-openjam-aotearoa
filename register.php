@@ -23,20 +23,25 @@
 <?php
 $admin = 'webmaster@domain.com';
 $title = ('Open Jam Aotearoa Registration in Process');
+$logfile = 'log_file_name.log';
 
 if ($_POST['firstname']) {
   $register_display = 'none';
+  $timestamp = date('Y-m-d H:i:s');
   $msg = '
-Registration:
-';
+
+  ';
+  $msg = $msg . $timestamp . '
+  ';
 
   foreach ($_POST as $key => $value) {
-    $msg = $msg . $key . ': ' . $value . '
-    ';
+  $msg = $msg . $key . ': ' . $value . '
+  ';
   }
 
   echo $msg;
   mail($admin, $title ,$msg, ('From: ' . $admin));
+  file_put_contents($logfile, $msg, FILE_APPEND);
 
   $msg =
 'Thanks, ' . $_POST['firstname'] . '

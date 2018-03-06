@@ -7,3 +7,4 @@ Icon
 ~$*
 
 website/node_modules
+*.log
