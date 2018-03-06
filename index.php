@@ -82,7 +82,7 @@
 
       <div class="sponsors">
         <h2>Sponsors</h2>
-        <img src="img/sponsor-massey.svg" alt="massey university" />
+        <img src="img/sponsor-massey.svg" alt="massey university" style="max-width:300px" />
         <img src="img/sponsor-oracle.svg" alt="oracle" />
       </div>
 
