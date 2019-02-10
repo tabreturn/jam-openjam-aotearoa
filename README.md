@@ -1,4 +1,4 @@
-# openjam
+# jam-openjam-aotearoa
 
 Open Jam Aotearoa 2017 website
 
