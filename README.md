@@ -1,6 +1,6 @@
-# jam-openjam-aotearoa
+# Open Jam Aotearoa 2018
 
-*Open Jam Aotearoa 2017 website*
+*Open Jam Aotearoa 2018 website*
 
 [live site](http://openjam.cmp.ac.nz)
 
